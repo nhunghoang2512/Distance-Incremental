@@ -203,35 +203,35 @@ function getRankBaseCost() {
 }
 
 function rank2Eff() {
-	return ExpantaNum.pow(1.1, player.rank);
+	return ExpantaNum.pow(11, player.rank);
 }
 
 function rank4Eff() {
-	return ExpantaNum.pow(3, player.tier);
+	return ExpantaNum.pow(30, player.tier);
 }
 
 function rank5Eff() {
-	return ExpantaNum.pow(1.975, player.rank);
+	return ExpantaNum.pow(19.75, player.rank);
 }
 
 function rank8Eff() {
-	return ExpantaNum.pow(1.1, player.rank);
+	return ExpantaNum.pow(11, player.rank);
 }
 
 function rank14Eff() {
-	return ExpantaNum.pow(player.rf.plus(1), 1.6);
+	return ExpantaNum.pow(player.rf.plus(1o), 16);
 }
 
 function rank40Eff() {
 	let eff = primesLTE(player.automation.scraps).max(1);
-	if (eff.gte(1e9)) eff = eff.log10().times(1e9/9)
+	if (eff.gte(1e10)) eff = eff.log7().times(1e9)
 	return eff;
 }
 
 function rank55Eff() {
-	return ExpantaNum.pow(2, player.rank)
+	return ExpantaNum.pow(20, player.rank)
 }
 
 function rank111Eff() {
-	return ExpantaNum.pow(2, player.rank)
+	return ExpantaNum.pow(20, player.rank)
 }
